@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'gatsby-link';
 
 import Container from '../components/Container';
 import Box from '../components/Box';
@@ -13,8 +14,8 @@ const Index = () => (
       <Text>Styled Components + Styled System is cool!</Text>
     </Box>
     <BackgroundImage my="2em" src="https://loremflickr.com/1920/1080" ratio={9 / 16} />
-    <Button mx="1em">Nice !</Button>
-    <Button.secondary mx="1em">Good !</Button.secondary>
+    <Button mx="1em" is={Link} to="/about">Go to About</Button>
+    <Button.secondary mx="1em">Good Button !</Button.secondary>
     <Button mx="1em" disabled>Not Good</Button>
   </Container>
 );
