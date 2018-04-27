@@ -17,11 +17,11 @@ const Layout = ({ children, data }) => (
       {children()}
     </ThemeProvider>
   </div>
-)
+);
 
 Layout.propTypes = {
   children: PropTypes.func,
-}
+};
 
 export default Layout;
 

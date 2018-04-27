@@ -27,6 +27,7 @@ export const buttonStyle = css`
   border: none;
   font-family: inherit;
   line-height: 1;
+  text-decoration: none;
   ${fontSize}
   ${space}
   ${color}

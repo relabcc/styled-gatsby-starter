@@ -10,4 +10,6 @@ export default [
   'overflow',
   'opacity',
   'alpha',
+  'hoverColor',
+  'hoverBg',
 ];
