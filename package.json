@@ -12,8 +12,10 @@
     "clean-tag": "^1.0.4",
     "gatsby": "^1.9.250",
     "gatsby-link": "^1.6.40",
+    "gatsby-plugin-react-helmet": "^2.0.11",
     "gatsby-plugin-styled-components": "^2.0.11",
     "lodash": "^4.17.10",
+    "react-helmet": "^5.2.0",
     "sanitize.css": "^5.0.0",
     "styled-components": "^3.2.6",
     "styled-system": "^2.2.4"

@@ -1,6 +1,5 @@
 import React from 'react';
 
-import withProviders from '../hoc/withProviders';
 import Container from '../components/Container';
 import Box from '../components/Box';
 import Text from '../components/Text';
@@ -20,4 +19,4 @@ const Index = () => (
   </Container>
 );
 
-export default withProviders(Index);
+export default Index;
