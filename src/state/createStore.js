@@ -4,7 +4,7 @@
 
 import { createStore, compose } from 'redux';
 import { fromJS } from 'immutable';
-import { responsiveStoreEnhancer } from 'redux-responsive'
+import { responsiveStoreEnhancer } from 'redux-responsive';
 
 import createReducer from './reducers';
 
@@ -35,14 +35,6 @@ export default function configureStore(initialState = {}) {
 
   // Extensions
   store.injectedReducers = {}; // Reducer registry
-
-  // Make reducers hot reloadable, see http://mxs.is/googmo
-  /* istanbul ignore next */
-  if (module.hot) {
-    module.hot.accept('./reducers', () => {
-      store.replaceReducer(createReducer(store.injectedReducers));
-    });
-  }
 
   return store;
 }

@@ -2,10 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import { Provider } from 'react-redux';
-
 import ThemeProvider from '../components/ThemeProvider';
-import configureStore from '../configureStore';
 
 const Layout = ({ children, data }) => (
   <div>
@@ -16,11 +13,9 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <Provider store={configureStore()}>
-      <ThemeProvider>
-        {children()}
-      </ThemeProvider>
-    </Provider>
+    <ThemeProvider>
+      {children()}
+    </ThemeProvider>
   </div>
 );
 

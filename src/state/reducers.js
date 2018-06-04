@@ -3,11 +3,11 @@
  */
 
 import { combineReducers } from 'redux-immutable';
-import { createResponsiveStateReducer } from 'redux-responsive'
+import { createResponsiveStateReducer } from 'redux-responsive';
 import fromPairs from 'lodash/fromPairs';
 import zip from 'lodash/zip';
 
-import { breakpoints } from './components/ThemeProvider/theme';
+import { breakpoints } from '../components/ThemeProvider/theme';
 
 const names = [
   'xs',
