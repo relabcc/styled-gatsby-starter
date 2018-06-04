@@ -14,6 +14,7 @@ const names = [
   'sm',
   'md',
   'lg',
+  'xl',
 ];
 
 /**
