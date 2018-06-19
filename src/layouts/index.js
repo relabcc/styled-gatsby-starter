@@ -2,10 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
+import Box from '../components/Box';
 import ThemeProvider from '../components/ThemeProvider';
 
 const Layout = ({ children, data }) => (
-  <div>
+  <Box height="100%">
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
@@ -16,7 +17,7 @@ const Layout = ({ children, data }) => (
     <ThemeProvider>
       {children()}
     </ThemeProvider>
-  </div>
+  </Box>
 );
 
 Layout.propTypes = {
