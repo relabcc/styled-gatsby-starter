@@ -8,7 +8,7 @@ import BackgroundImage from '../components/BackgroundImage';
 import Button from '../components/Button';
 
 const Index = () => (
-  <Container>
+  <Container height="100%">
     <Box my="2em">
       <Text.h1>Styled Gatsby Starter</Text.h1>
       <Text>Styled Components + Styled System is cool!</Text>
