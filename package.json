@@ -6,7 +6,8 @@
     "start": "npm run develop",
     "develop": "gatsby develop",
     "build": "gatsby build",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "storybook": "start-storybook -p 6006"
   },
   "dependencies": {
     "clean-tag": "^1.0.4",
@@ -30,6 +31,8 @@
     "styled-system": "^2.2.4"
   },
   "devDependencies": {
+    "@storybook/react": "^3.4.7",
+    "babel-core": "^6.26.3",
     "babel-eslint": "^7.2.3",
     "eslint": "^4.1.1",
     "eslint-config-react-app": "2.1.0",
