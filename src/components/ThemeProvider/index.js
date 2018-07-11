@@ -2,6 +2,8 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import 'sanitize.css';
 
+import './global-styles';
+
 import theme from './theme';
 import Box from '../Box';
 
