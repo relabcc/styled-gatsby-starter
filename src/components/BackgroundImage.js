@@ -9,7 +9,7 @@ const BackgroundImage = Box.extend`
   background-size: ${({ size }) => size};
   background-position: ${({ backgroundPosition }) => backgroundPosition};
   background-repeat: no-repeat;
-  ${ratio}
+  ${(props) => props.height ? '' : ratio(props)}
 `;
 
 BackgroundImage.propTypes = {

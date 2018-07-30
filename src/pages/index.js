@@ -11,7 +11,7 @@ import withResponsive from '../hoc/withResponsive';
 
 const Index = ({ browser }) => (
   <Container height="100%">
-    <Box py="2em">
+    <Box mx={[0, null, null, '3em']} py={[0, null, null, '2em']}>
       <Text.h1>Styled Gatsby Starter</Text.h1>
       <Text>Styled Components + Styled System is cool!</Text>
       <Text>Crrent Breakpoint: {browser.mediaType}</Text>
