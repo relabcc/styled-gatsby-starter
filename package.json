@@ -10,9 +10,9 @@
     "storybook": "start-storybook -p 6006"
   },
   "dependencies": {
-    "clean-tag": "^1.0.4",
-    "gatsby": "^1.9.250",
-    "gatsby-link": "^1.6.40",
+    "clean-tag": "1.1.0",
+    "gatsby": "^1.9.277",
+    "gatsby-link": "^1.6.46",
     "gatsby-plugin-react-helmet": "^2.0.11",
     "gatsby-plugin-styled-components": "^2.0.11",
     "hoist-non-react-statics": "^2.5.0",
@@ -26,20 +26,20 @@
     "redux-actions": "^2.4.0",
     "redux-immutable": "^4.0.0",
     "redux-responsive": "^4.3.7",
-    "sanitize.css": "^5.0.0",
-    "styled-components": "^3.2.6",
-    "styled-system": "^2.2.4"
+    "sanitize.css": "^6.0.0",
+    "styled-components": "^3.3.3",
+    "styled-system": "2.3.6"
   },
   "devDependencies": {
     "@storybook/react": "^3.4.7",
     "babel-core": "^6.26.3",
     "babel-eslint": "^7.2.3",
     "babel-loader": "7.1.1",
-    "eslint": "^4.1.1",
+    "eslint": "4.1.1",
     "eslint-config-react-app": "2.1.0",
-    "eslint-plugin-flowtype": "^2.34.1",
-    "eslint-plugin-import": "^2.6.0",
-    "eslint-plugin-jsx-a11y": "^5.1.1",
-    "eslint-plugin-react": "^7.1.0"
+    "eslint-plugin-flowtype": "2.34.1",
+    "eslint-plugin-import": "2.6.0",
+    "eslint-plugin-jsx-a11y": "5.1.1",
+    "eslint-plugin-react": "7.1.0"
   }
 }

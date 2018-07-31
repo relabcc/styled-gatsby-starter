@@ -25,7 +25,7 @@ export default ({ key, reducer }) => (WrappedComponent) => {
       injectReducer(key, reducer);
     }
 
-    injectors = getInjectors(this.context.store);
+    injectors = getInjectors(this.context.store)
 
     render() {
       return <WrappedComponent {...this.props} />;

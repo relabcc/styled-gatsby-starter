@@ -5,7 +5,7 @@ import reducer, { increment, decrement } from './reducer';
 import injectReducer from '../../utils/injectReducer';
 
 const mapStateToProps = (state) => ({
-  count: state.getIn(['counter', 'count']) || 0,
+  count: state.getIn(['counter', 'count']),
 });
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({

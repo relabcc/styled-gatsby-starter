@@ -15,6 +15,7 @@ import {
 import tag from 'clean-tag';
 
 import { getColorByPropKey } from './utils/getColor';
+import blacklist from './utils/blacklist';
 
 const active = css`
   color: ${getColorByPropKey('hoverColor')};
@@ -56,6 +57,7 @@ const Button = styled(tag)`
 `;
 
 Button.defaultProps = {
+  blacklist,
   is: 'button',
   f: '1em',
   border: '2px solid',

@@ -12,4 +12,6 @@ export default [
   'alpha',
   'hoverColor',
   'hoverBg',
+  'hoverBorder',
+  'dispatch',
 ];
