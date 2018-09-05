@@ -1,4 +1,6 @@
+import React from 'react';
 import styled from 'styled-components';
+import GatsbyLink from 'gatsby-link';
 import {
   fontSize,
   fontWeight,
@@ -6,31 +8,43 @@ import {
   space,
   color,
   letterSpacing,
+  display,
 } from 'styled-system';
 import tag from 'clean-tag';
 
 import blacklist from './utils/blacklist';
 import { getColorByPropKey } from './utils/getColor';
 
-const Link = styled(tag.a)`
+const LinkBase = styled(tag.a)`
   ${fontSize}
   ${space}
   ${color}
   ${fontWeight}
   ${lineHeight}
   ${letterSpacing}
+  ${display}
   text-decoration: none;
   &:hover {
     color: ${getColorByPropKey('hoverColor')};
-    text-decoration: underline;
   }
 `;
 
-Link.defaultProps = {
+LinkBase.defaultProps = {
   blacklist,
-  color: 'primary',
-  hoverColor: 'primary',
+  color: 'text',
+  hoverColor: 'blue',
   fontWeight: 'bold',
 };
+
+const Link = (props) => props.to ? (
+  <LinkBase
+    is={GatsbyLink}
+    {...props}
+  />
+) : <LinkBase {...props} />;
+
+Link.gatsby = (props) => (
+  <Link is={GatsbyLink} {...props} />
+);
 
 export default Link;
